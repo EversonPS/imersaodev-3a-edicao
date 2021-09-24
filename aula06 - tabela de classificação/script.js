@@ -22,6 +22,7 @@ exibeTabela()
 function exibeTabela(){
     tabela.innerHTML = ""
     for (var time of times) {
+        console.log(time)
         time.pontos = calculaPontos(time)
         adicionaNaTabela(time)
     }
@@ -58,21 +59,21 @@ function adicionaNaTabela(time){
     var acao1 = document.createElement("td")
     var botaoAdicionaVitoria = document.createElement("button")
     botaoAdicionaVitoria.innerHTML = "Vitória"
-    botaoAdicionaVitoria.addEventListener("click", adicionaVitoria(time))
+    botaoAdicionaVitoria.addEventListener("click", function(){adicionaVitoria(time)})
     acao1.append(botaoAdicionaVitoria)
     linha.append(acao1)
 
     var acao2 = document.createElement("td")
     var botaoAdicionaEmpate = document.createElement("button")
     botaoAdicionaEmpate.innerHTML = "Empate"
-    botaoAdicionaEmpate.addEventListener("click", adicionaEmpate(time))
+    botaoAdicionaEmpate.addEventListener("click", function(){adicionaEmpate(time)})
     acao2.append(botaoAdicionaEmpate)
     linha.append(acao2)
 
     var acao3 = document.createElement("td")
     var botaoAdicionaDerrota = document.createElement("button")
     botaoAdicionaDerrota.innerHTML = "Derrota"
-    botaoAdicionaDerrota.addEventListener("click", adicionaDerrota(time))
+    botaoAdicionaDerrota.addEventListener("click", function(){adicionaDerrota(time)})
     acao3.append(botaoAdicionaDerrota)
     linha.append(acao3)
 
