@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+  background-color: #000000;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+  display: block;
+  margin: 0 auto
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lista-animes{
+  list-style: none;
+  margin: 0 auto;
+  width: 250px;
+  padding: 0;
+}
+
+.lista-animes li{
+  margin-top: 40px;
+  height: 250px;
+}
+
+.lista-animes img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lista-animes img:hover{
+  border: 2px solid wheat;
+  width: 102%;
+  height: 102%;
+}
+
+.mini-form{
+ margin: 50px auto;
+ text-align: center;
+}
+
+.titulo-form{
+  font-size: 19px;
+}
+.adicionar{
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: red;
+  transition: 0.3s;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin: 10px auto;
+}
+
+.adicionar:hover{
+  background-color: darkred;
+}
+
+.url-digitado{
+  height: 40px;
+  width: 410px;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+.efeito-sumir{
+  opacity: 0;
+  transition: 0.5s
+}
